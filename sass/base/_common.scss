@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+  line-height: initial;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link,
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  color: var(--color-dark);
+  background-color: #FFFFFF;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+

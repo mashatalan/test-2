@@ -1,0 +1,116 @@
+.employees {
+  background-color: var(--bc-light);
+}
+
+.employees__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+// 480 +
+@media screen and (min-width: 480px) {
+  .employees__list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .employees__title {
+    @include font(28px, 700, 33px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+
+  .employees__list-item {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0 0 4px 4px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .employees__photo {
+    width: 100%;
+    min-width: 450px;
+  }
+  .employees__name {
+    @include font(16px, 500, 19px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  .employees__position {
+    @include font(16px, 400, 19px);
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+}
+
+// 768 +
+
+@media screen and (min-width: 768px) {
+  .employees__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .employees__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+  }
+  .employees__photo {
+    min-width: 354px;
+  }
+}
+
+//1200 +
+@media screen and (min-width: 1200px) {
+
+  .employees__title {
+    @include font(36px, 700, 42px);
+    margin-bottom: 50px;
+  }
+  .employees__photo {
+    min-width: 270px;
+  }
+
+  .employees__list-item {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .employees__list-item:nth-child(even) {
+    margin-right: 0;
+  }
+}

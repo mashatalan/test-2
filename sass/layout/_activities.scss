@@ -1,0 +1,56 @@
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
+
+// 1200 +
+@media screen and (min-width: 1200px) {
+
+
+  .activity {
+    display: block;
+    padding-top: 0;
+  }
+
+  .activity__title {
+    @include font(36px, 700, 42px);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .activity__list {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .activity__list-item .activity-list:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .holder {
+    position: relative;
+  }
+  .holder__desc {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+
+    font-family: var(--ff-primary);
+    @include font(14px, 700, 16px);
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+  }
+}

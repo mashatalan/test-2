@@ -1,0 +1,8 @@
+.button {
+  @include font(16px, 700, 30px);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: var(--ff-primary);
+  cursor: pointer;
+}

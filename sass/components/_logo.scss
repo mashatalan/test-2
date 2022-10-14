@@ -1,0 +1,8 @@
+.logo {
+  @include font(26px, 700, 31px);
+  display: inline-block;
+  color: var(--color-dark);
+  font-family: var(--ff-secondary);
+  letter-spacing: 0.03em;
+
+}

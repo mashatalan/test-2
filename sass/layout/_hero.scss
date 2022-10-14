@@ -1,0 +1,99 @@
+.hero {
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+
+  background-size: cover;
+  background-position: center;
+
+  background-color: var(--color-dark);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url("../images/hero/logo_sm-@1x.png");
+
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/hero/logo_sm-@2x.png);
+  }
+
+  // Tablet images
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/hero/logo_md-@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/logo_md-@2x.png);
+    }
+  }
+
+  // Desktop images
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/hero/logo_lg-@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/logo_lg-@2x.png);
+    }
+  }
+}
+
+
+.hero__title {
+  @include font(26px, 900, 42px);
+  width: 360px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-light);
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__button {
+  @include font(16px, 700, 30px);
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 24px;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--focus-button);
+
+  }
+}
+
+// 768 +
+@media screen and (min-width: 768px) {
+  .hero {
+    //width: 100%;
+  }
+}
+
+// 1200+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    @include font(44px, 900, 60px);
+    width: 696px;
+  }
+  .hero__button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+}
+
+
+
